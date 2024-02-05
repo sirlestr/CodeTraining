@@ -1,0 +1,1 @@
+﻿namespace OnlineAPP{    internal class Program    {        static void Main(string[] args)        {            GeneratorVet generatorVet = new GeneratorVet();            int pocetVet = 11;            for (int i = 0; i < pocetVet; i++)            {                generatorVet.PoskladejVetu();            }                    }    }}
