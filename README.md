@@ -12,3 +12,4 @@ The best practices are not always used in this codes, like OOP,SRP,SoC etc... Th
 some variables are in cz, for better understandig what happens and where.
 In future, other  projects will be in english of course
  
+Feel free to add any comment,recomendation or notes. Everyone needs to start and every feedback is good and push me forward ;)
