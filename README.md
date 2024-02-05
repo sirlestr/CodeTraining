@@ -9,6 +9,6 @@ This code I wrote for learning, training and testing new technologies and improv
 The best techniques are not always used in this codes, like OOP,SRP,SoC etc... The main goal is to learn and practice how things work and how they behave.
 
 
-some variables are in cz, for better understandig what is going on and for trainig.
-In future, larger projects will be in english of course
+some variables are in cz, for better understandig what happens and where.
+In future, other  projects will be in english of course
  
