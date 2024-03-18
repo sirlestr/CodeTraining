@@ -1,0 +1,75 @@
+<h2> Externí odkazy</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @if (Model is not null)
+    {
+        @foreach (var item in Model)
+        {
+            @if (item.Section == 0)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="@item.Url" class="clanek-odkaz stretched-link" >@item.Title</a></h5>
+                            <p class="card-text">@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+    else
+    {
+        <h2>Nenalezeny žádné odkazy</h2>
+    } 
+</div>
+
+
+<h2>Interní odkazy</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @if (Model is not null)
+    {
+        @foreach (var item in Model)
+        {
+            @if (item.Section == 1)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="@item.Url" class="clanek-odkaz stretched-link">@item.Title</a></h5>
+                            <p class="card-text">@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+    else
+    {
+        <h2>Nenalezeny žádné odkazy</h2>
+    } 
+</div>
+
+<h2>Ostatní odkazy</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @if (Model is not null)
+    {
+        @foreach (var item in Model)
+        {
+            @if (item.Section != 0 && item.Section != 1)
+            {     
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="@item.Url" class="clanek-odkaz stretched-link">@item.Title</a></h5>
+                            <p class="card-text">@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+    else
+    {
+        <h2>Nenalezeny žádné odkazy</h2>
+    } 
+</div>
